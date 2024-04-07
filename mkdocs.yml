@@ -1,1 +1,21 @@
 site_name: Plants Diseases
+
+copyright: "Copyright &copy; 2023"
+
+theme:
+  name: material
+  language: "pt"
+  palette:
+    primary: dark blue
+    accent: green
+  features:
+    - navigation.tabs
+  font:
+    text: "Open Sans"
+    code: "sans-serif"
+  # logo: assets/logo.png
+  # favicon: assets/logo.png
+
+
+nav:
+  - Início: index.md
