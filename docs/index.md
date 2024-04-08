@@ -1,3 +1,5 @@
+<center>
+ 
 # Home
  <h4>Olá, bem vindo a documentação do projeto Plants-Diseases.</h4>
 
@@ -46,3 +48,5 @@
         </td>
 
 </table>
+
+</center>
