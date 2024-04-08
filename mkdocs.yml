@@ -6,16 +6,12 @@ theme:
   name: material
   language: "pt"
   palette:
-    primary: dark blue
-    accent: green
-  features:
-    - navigation.tabs
+    primary: light green
+    accent: amber
+# features:
+#     - navigation.tabs
   font:
-    text: "Open Sans"
+    text: "Reddit Mono"
     code: "sans-serif"
-  # logo: assets/logo.png
-  # favicon: assets/logo.png
-
-
-nav:
-  - Início: index.md
+  logo: assets/leafFavcon.svg
+  favicon: assets/leafFavcon.svg
