@@ -1,0 +1,4 @@
+api/mlruns.db
+__pycache__/
+mlruns/
+.env
