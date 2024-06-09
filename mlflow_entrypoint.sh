@@ -1,9 +1,10 @@
 #!/bin/bash
 
-export MLFLOW_TRACKING_URI=file:///app/mlruns
+# Inicie o MLflow em segundo plano
+mlflow server --backend-store-uri file:///app/mlruns --default-artifact-root /app/mlruns --host 0.0.0.0 --port 5000 &
 
-# Iniciar o servidor MLflow em background
-mlflow ui --host 0.0.0.0 --port 5000 &
+# Aguarde um curto período para garantir que o MLflow tenha tempo para iniciar
+sleep 5
 
-# Iniciar o servidor Uvicorn para FastAPI
-uvicorn api.main:app --host 0.0.0.0 --port 8000
+# Inicie o FastAPI na porta 8080
+uvicorn api.main:app --host 0.0.0.0 --port 8080

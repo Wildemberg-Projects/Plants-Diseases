@@ -14,4 +14,3 @@ keras-utils==1.0.13
 matplotlib
 mlflow==2.13.2
 fastapi-mlflow==0.6.3
-python-dotenv

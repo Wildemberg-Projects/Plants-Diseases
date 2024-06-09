@@ -19,7 +19,7 @@ COPY mlflow_entrypoint.sh .
 RUN mkdir -p /app/mlruns
 
 # Exponha as portas onde a aplicação e o MLflow irão rodar
-EXPOSE 8000
+EXPOSE 8080
 EXPOSE 5000
 
 # Comando para iniciar a aplicação e o MLflow

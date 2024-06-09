@@ -8,10 +8,6 @@ from PIL import Image
 import tensorflow as tf
 import mlflow
 import time
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
 
 app = FastAPI()
 
@@ -19,8 +15,7 @@ mlflow.set_tracking_uri('file:///app/mlruns')
 mlflow.set_experiment("Plant-Disease-API-Monitoramento")  # Nome do experimento
 
 origins = [
-    "http://localhost",
-    "http://localhost:3000",
+    "*"
 ]
 app.add_middleware(
     CORSMiddleware,
@@ -78,4 +73,4 @@ async def predict(
         }
 
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    uvicorn.run(app, host='localhost', port=8080)
