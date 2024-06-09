@@ -1,0 +1,17 @@
+tensorflow
+tensorflow-addons==0.23.0
+tensorflow-datasets==4.3.0
+tensorflow-hub==0.16.1
+tensorflow-serving-api==2.5.0
+fastapi
+uvicorn
+python-multipart
+pillow
+matplotlib
+numpy
+keras==2.15.0
+keras-utils==1.0.13
+matplotlib
+mlflow==2.13.2
+fastapi-mlflow==0.6.3
+python-dotenv

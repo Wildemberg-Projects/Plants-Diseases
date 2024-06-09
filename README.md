@@ -8,11 +8,11 @@ Tendo em vista a importância de identificar doenças e problemas em plantios co
 Para execução do arquivo .ipynb, é nessário abrí-lo no ambiente [Colab da Google](https://colab.research.google.com/github/Wildemberg-Projects/Plants-Diseases/blob/main/main.ipynb) para garantia do bom funcionamento dos scripts.  
 
 ## Como executar a api
-* Entre na pasta api pelo terminal
+* Entre na pasta raiz pelo terminal
 * Execute os comandos:
 ~~~~bash
-pip install -r requeriments.txt
-uvicorn main:app --reload
+docker build -t plants-diseases-api .
+docker run -d --name plants-diseases-api-container -p 8000:8000 -p 5000:5000 plants-diseases-api
 ~~~~
 * A api irá rodar na porta 8000;
 
