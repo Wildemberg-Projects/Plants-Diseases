@@ -1,6 +1,9 @@
 # Plants-Diseases
 Repositório destinado a criação de um modelo de aprendizado de máquina para identificação de doenças em plantas.
 
+# URL do deploy
+[Link para a API Pública](https://plants-diseases-api-ytito7x2pa-uc.a.run.app/docs)
+
 ## Sobre o Projeto
 Tendo em vista a importância de identificar doenças e problemas em plantios com antecedência, buscando minimizar os danos causados, nossa equipe embarcou no projeto "Plant Disease", que consiste no desenvolvimento de um modelo Machine Learning o qual realiza o processamento de imagens de folhas e plantas, a fim de identificação de doenças como ferrugem, oídio e outras, trazendo o grande benefício do tempo para grandes e pequenos agricultores.
 
